@@ -1,0 +1,18 @@
+@media only screen and (max-width:940px) {
+    .box .logo {width: 20%;}
+    .diamond-circle {width: 20%;}
+}
+
+@media only screen and (max-width:600px) {
+    .box .logo {width: 25%;}
+    .diamond-circle {width: 20%;}
+}
+
+@media only screen and (max-width:450px) {
+    .box .logo {width: 35%;}
+    .diamond-circle {width: 30%;}
+    /* .w-5 {width: 5px;} */
+    .w-5-per {width: 45%;}
+    .table th {font-size: 14px;}
+    .box-click a {font-size: 14px;}
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <title>Cash History</title>
+        <link rel="stylesheet" href="<%= process.env.BASE_URL %>public/assets/web_view/css/bootstrap.min.css">
+        <link rel="stylesheet" href="<%= process.env.BASE_URL %>public/assets/web_view/css/style.css">
+        <link rel="stylesheet" href="<%= process.env.BASE_URL %>public/assets/web_view/css/responsive.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </head>
+
+    <body>
+        <section>
+            <div class="container">
+                <div class="box">
+                    <img class="logo" src="<%= process.env.BASE_URL %>public/assets/web_view/img/Duud-logo.png">
+                <div class="row">
+                    <div class="col-md-12">
+                       <table class="table mt-50">
+                           <thead>
+                               <th class="text-center">Date</th>
+                               <th class="text-center">Amount</th>
+                               <th class="text-center">Status</th>
+                           </thead>
+                           <tbody>
+                               <tr>
+                                   <td class="text-center">10/08/2021</td>
+                                   <td class="text-center">2,100</td>
+                                   <td class="text-center">Paid</td>
+                               </tr>
+                               <tr>
+                                <td class="text-center">15/08/2021</td>
+                                <td class="text-center">15,000</td>
+                                <td class="text-center">Paid</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">21/09/2021</td>
+                                <td class="text-center">9,000</td>
+                                <td class="text-center">Paid</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">21/09/2021</td>
+                                <td class="text-center">9,000</td>
+                                <td class="text-center">Paid</td>
+                            </tr>
+                           </tbody>
+                       </table>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+
+        <script src="<%= process.env.BASE_URL %>public/assets/web_view/js/jquery-3.5.1.min.js"></script>
+        <script src="<%= process.env.BASE_URL %>public/assets/web_view/js/bootstrap.min.js"></script>
+    </body>
+</html>

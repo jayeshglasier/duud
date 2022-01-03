@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <title>Credits</title>
+        <link rel="stylesheet" href="<%= process.env.BASE_URL %>public/assets/web_view/css/bootstrap.min.css">
+        <link rel="stylesheet" href="<%= process.env.BASE_URL %>public/assets/web_view/css/style.css">
+        <link rel="stylesheet" href="<%= process.env.BASE_URL %>public/assets/web_view/css/responsive.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </head>
+
+    <body>
+        <section>
+            <div class="container">
+                <div class="box">
+                    <img class="logo" src="<%= process.env.BASE_URL %>public/assets/web_view/img/Duud-logo.png">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1>You have <span>0</span> Diamonds</h1>
+                    </div>
+                    <div class="col-md-12">
+                        <img class="diamond-circle" src="<%= process.env.BASE_URL %>public/assets/web_view/img/diamond-circle.png">
+                    </div>
+                    <div class="col-md-12">
+                       <table class="table">
+                           <thead>
+                               <th class="w-5-per">Credits</th>
+                               <th></th>
+                           </thead>
+                           <tbody>
+							   	<% for( let i = 0; i < data.length; i++ ) { %>
+									<tr>
+										<td><div class="mt-10"><img class="bottom-2" src="<%= process.env.BASE_URL %>public/assets/web_view/img/credits-icon.png"><%= data[i].credits_cash %></div></td>
+										<td class="text-right"><div class="label-box"><img src="<%= process.env.BASE_URL %>public/assets/web_view/img/diamond.png"><%= data[i].diamonds %></div></td>
+									</tr>
+							   	<% } %>
+                           </tbody>
+                       </table>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+
+        <script src="<%= process.env.BASE_URL %>public/assets/web_view/js/jquery-3.5.1.min.js"></script>
+        <script src="<%= process.env.BASE_URL %>public/assets/web_view/js/bootstrap.min.js"></script>
+    </body>
+</html>
